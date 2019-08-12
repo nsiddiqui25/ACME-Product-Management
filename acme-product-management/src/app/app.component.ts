@@ -1,4 +1,4 @@
-/* 
+/*
 import { Component } from '@angular/core';
 
 @Component({
@@ -18,6 +18,7 @@ import { Component } from '@angular/core';
 
 // 2) Component
 @Component({
+  // tslint:disable-next-line:component-selector
   selector: 'pm-root',
   template: `
   <div>
@@ -30,5 +31,6 @@ import { Component } from '@angular/core';
 
 // 1) Building the class
 export class AppComponent {
+  // tslint:disable-next-line:no-inferrable-types
   pageTitle: string = 'Acme Product Management';
 }
