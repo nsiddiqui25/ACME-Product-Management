@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms'
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductListComponent } from './products/product-list.component';
@@ -14,7 +15,8 @@ import { ProductListComponent } from './products/product-list.component';
   //imports array includes BrowserModule so that app runs correctly in the browser
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   //bootstrap array lists our AppComponent as the starting component for our app
